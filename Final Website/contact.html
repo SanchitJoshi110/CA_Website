@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MUSCLE MAGIC - Contact</title>
+</head>
+<body>
+    
+    
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Muscle Magic Logo" class="logo">
+            <h1 class="brand-name">MUSCLE MAGIC</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>   
+        
+        <main class="contact-main">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out!</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" required>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+        
+                <label for="enroll">Enrollment Option:</label>
+                <select id="enroll" name="enroll" required>
+                    <option value="personal_training">Personal Training</option>
+                    <option value="group_classes">Group Classes</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="nutrition">Nutrition Guidance</option>
+                    <option value="crossfit">CrossFit</option>
+                    <option value="cardio">Cardio Sessions</option>
+                </select>
+        
+                <button type="submit" class="contact-button">Call me</button>
+                <p class="callback-message">You will receive a call from us within 24 hours.</p>
+            </form>
+        </main>
+        
+</body>
+</html>

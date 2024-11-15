@@ -1,0 +1,327 @@
+* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.85); /* Transparent black */
+    height: 70px; /* Increased height */
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and navigation */
+    padding: 0 20px; /* Padding for left and right */
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* Logo Container Styles */
+.logo-container {
+    display: flex; /* Align logo and brand name horizontally */
+    align-items: center; /* Center them vertically */
+}
+
+.logo {
+    height: 50px; /* Height of the logo */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+
+.brand-name {
+    color: white; /* Color for the brand name */
+    font-size: 24px; /* Font size for brand name */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display items in a row */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 15px; /* Padding for clickable area */
+    font-size: 18px; /* Increased text size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: lightslategrey;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: center; /* Horizontally centers the divs */
+    align-items: center;     /* Vertically centers the divs */
+    padding: 20px;
+    gap: 20px;               /* Adds space between the divs */
+    min-height: 80vh;
+}
+
+h1 {
+    color: #2c3e50; /* Heading color */
+}
+
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+ul, ol {
+    margin: 20px 0; /* Margin for lists */
+}
+
+.mainContent {
+    flex: 1;
+    max-width: 500px; /* Optional: Limits the width for better alignment */
+    text-align: center; /* Centers text inside the div */
+    margin-right: 100px;
+}
+
+.mainImg {
+    flex: 1;
+    max-width: 500px; /* Optional: Limits the width for better alignment */
+}
+
+.mainImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mainContent p {
+    line-height: 30px;
+    font-size: 19px;
+}
+
+/* About Page Styles */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between each about-item */
+    padding: 20px;
+    align-items: center;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between image and text in each item */
+}
+
+.image-item img {
+    width: 400px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.text-item {
+    max-width: 500px; /* Limit the width for readability */
+    margin-left: 200px;
+    word-spacing: 9px;
+}
+
+.text-item h2 {
+    color: #2c3e50; /* Heading color */
+    margin-bottom: 0;
+}
+
+.text-item p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Services Page Styles */
+.services-main {
+    padding: 20px;
+    display: block;
+}
+
+.services-heading {
+    text-align: center;
+    margin: 40px 0;
+    color: #2c3e50;
+    font-size: 36px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service-item h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+/* Downloads Page Styles */
+.downloads-main {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.downloads-heading {
+    text-align: left;
+    color: #2c3e50;
+    font-size: 37px;
+    margin: 10px 20px 20px 0;     /* Set margin to place it at the very top */
+}
+
+.downloads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Space between each row */
+    align-items: flex-start;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Row Styles */
+.download-row {
+    display: flex;
+    align-items: flex-start; /* Align heading with top of the image */
+    gap: 20px;
+}
+
+.download-image{
+    width: 800px;
+}
+
+/* Image Styles */
+.download-image img {
+    width: 60%;
+    height:300px;
+    border-radius: 10px;
+}
+
+/* Info Section Styles */
+.download-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+    margin-left: -200px;
+}
+
+.download-info h2 {
+    font-size: 30px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.download-info p {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    width: 150px;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #1a242f;
+}
+
+/* Contact Page Specific Styles */
+.contact-main {
+    max-width: 600px;
+    margin: 20px auto; /* Add space from the top to avoid overlapping the header */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+}
+
+.contact-main h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px; /* Add margin for spacing between the heading and form */
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-button {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #1a242f;
+}
+
+.callback-message {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
